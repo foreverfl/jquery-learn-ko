@@ -1,3 +1,3 @@
-* jQuery란?
-** jQuery 작동 방식
-** 추가적인 jQuery 지원
+* xref:about-jquery.adoc[jQuery란?]
+** xref:how-jquery-works.adoc[jQuery 작동 방식]
+** xref:additional-jquery-support.adoc[추가적인 jQuery 지원]
