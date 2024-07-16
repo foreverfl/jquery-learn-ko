@@ -9,7 +9,8 @@ asciidoc:
 
 nav:
   - modules/ROOT/nav.adoc
-  - modules/using-jquery/nav.adoc
+  - modules/about-jquery/nav.adoc
+  - modules/using-jquery-core/nav.adoc
   - modules/events/nav.adoc
   - modules/effects/nav.adoc
   - modules/ajax/nav.adoc
