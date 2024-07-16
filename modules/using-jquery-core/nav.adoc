@@ -1,4 +1,4 @@
-* xref:using-jquery-core.adoc[jQuery 코어 사용하기]
+* jQuery 코어 사용하기
 ** xref:dollar.adoc[$ vs $()]
 ** xref:document-ready.adoc[$( document ).ready()]
 ** xref:avoiding-conflicts-with-other-libraries.adoc[다른 라이브러리와의 충돌 방지하기]
@@ -13,7 +13,7 @@
 ** xref:utility-methods.adoc[유틸리티 메서드]
 ** xref:iterating-over-jquery-and-non-jquery-objects.adoc[jQuery 및 비 jQuery 객체 반복]
 ** xref:using-jquerys-index-function.adoc[jQuery의 .index() 함수 사용하기]
-*** xref:frequently-asked-questions.adoc[자주 묻는 질문]
+** xref:frequently-asked-questions.adoc[자주 묻는 질문]
 *** xref:how-do-i-select-an-item-using-class-or-id.adoc[어떻게 class나 ID를 사용하여 항목을 선택할 수 있나요?]
 *** xref:how-do-i-select-elements-when-i-already-have-a-dom-element.adoc[이미 DOM 요소가 있을 때 어떻게 요소를 선택할 수 있나요?]
 *** xref:how-do-i-test-whether-an-element-has-a-particular-class.adoc[요소가 특정 클래스를 가지고 있는지 어떻게 테스트할 수 있나요?]

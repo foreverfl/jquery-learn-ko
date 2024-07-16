@@ -1,3 +1,60 @@
-= Document Ready
+= $( document ).ready()
 
-내용을 여기에 작성하세요.
+문서가 "준비"되기 전까지는 페이지를 안전하게 조작할 수 없습니다. jQuery는 이러한 준비 상태를 감지합니다. ``$( document ).ready()`` 안에 포함된 코드는 페이지의 Document Object Model (DOM)이 JavaScript 코드 실행 준비가 되었을 때만 실행됩니다. ``$( window ).on( "load", function() { ... })`` 안에 포함된 코드는 DOM뿐만 아니라 전체 페이지(이미지나 iframe 포함)가 준비되었을 때 실행됩니다.
+
+[source,js]
+----
+// $( document ).ready() 블록.
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+----
+
+경험 많은 개발자들은 때때로 `$( document ).ready()` 대신 단축형 `$()`를 사용합니다. jQuery에 익숙하지 않은 사람들이 볼 수 있는 코드를 작성하는 경우, 긴 형식을 사용하는 것이 좋습니다.
+
+[source,js]
+----
+// $( document ).ready()의 단축형
+$(function() {
+    console.log( "ready!" );
+});
+----
+
+익명 함수 대신 명명된 함수를 ``$( document ).ready()``에 전달할 수도 있습니다.
+
+[source,javascript]
+----
+// 익명 함수 대신 명명된 함수 전달하기.
+function readyFn( jQuery ) {
+    // 문서가 준비되었을 때 실행할 코드.
+}
+
+$( document ).ready( readyFn );
+// 또는:
+$( window ).on( "load", readyFn );
+----
+
+아래 예제는 ``$( document ).ready()``와 ``$( window ).on( "load" )``가 실제로 작동하는 모습을 보여줍니다. 이 코드는 ``<iframe>``에 웹사이트 URL을 로드하려고 시도하고 두 이벤트를 모두 확인합니다:
+
+[source,html]
+----
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+        console.log( "document loaded" );
+    });
+ 
+    $( window ).on( "load", function() {
+        console.log( "window loaded" );
+    });
+    </script>
+</head>
+<body>
+    <iframe src="http://techcrunch.com"></iframe>
+</body>
+</html>
+----
+
+``.ready()`` 메서드에 대해 더 자세히 알아보려면 관련 문서 페이지를 읽어볼 수 있습니다.
