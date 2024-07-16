@@ -16,6 +16,6 @@ nav:
   - modules/ajax/nav.adoc
   - modules/plugins/nav.adoc
   - modules/performance/nav.adoc
-  - modules/core-organization/nav.adoc
+  - modules/code-organization/nav.adoc
   - modules/jquery-ui/nav.adoc
   - modules/jquery-mobile/nav.adoc
